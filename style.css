@@ -163,12 +163,27 @@
 }
 
 .adelia-font {
-  font-family: 'adelia', sans-serif; /* Assure-toi que la police est chargée */
-  font-size: clamp(60px, 10vw, 120px);
+  font-family: 'adelia', sans-serif;
+  font-size: clamp(35px, 8vw, 120px);
   font-weight: 300;
   color: var(--white);
   display: block;
   line-height: 1;
+  white-space: nowrap;
+}
+
+/* Ajustement spécifique pour le titre "De Musset" sur mobile */
+@media (max-width: 550px) {
+  .hero-title {
+    transform: scale(0.9);
+    transform-origin: left center;
+  }
+  
+  .adelia-font {
+    font-size: clamp(30px, 7vw, 50px);
+    white-space: normal;
+    word-break: keep-all;
+  }
 }
 
 .hero-sub {
