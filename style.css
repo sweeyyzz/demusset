@@ -231,10 +231,6 @@
   .image-container {
     height: 50vh;
   }
-    body {
-    cursor: none;
-  }
-
 }
 
     /* ─── MUSIQUE ─── */
@@ -881,4 +877,14 @@
   border-radius: 12px;
   overflow: hidden;
   background: #000;
+}
+
+/* Désactiver le curseur personnalisé sur mobile */
+@media (max-width: 900px) {
+    .cursor, .cursor-follower {
+        display: none !important;
+    }
+    body {
+        cursor: auto !important;
+    }
 }
