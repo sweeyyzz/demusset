@@ -231,6 +231,10 @@
   .image-container {
     height: 50vh;
   }
+    body {
+    cursor: none;
+  }
+
 }
 
     /* ─── MUSIQUE ─── */
@@ -692,13 +696,17 @@
 }
 
 /* Adaptation Mobile */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   footer {
     flex-direction: column;
     gap: 20px;
     padding: 40px 24px;
     text-align: center;
   }
+   .galerie-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @font-face {
