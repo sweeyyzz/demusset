@@ -941,3 +941,33 @@
     font-size: 28px; /* Réduit la taille pour que ça tienne mieux */
   }
 }
+
+/* Forçage absolu pour iPhone et Android réel */
+@media (max-width: 480px) {
+  .hero-title {
+    width: 100%;
+    max-width: 100%;
+    overflow: visible;
+  }
+  
+  .adelia-font {
+    font-size: 40px !important;
+    white-space: normal !important;
+    word-break: keep-all !important;
+    display: inline-block !important;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .adelia-font {
+    font-size: 34px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .adelia-font {
+    font-size: 28px !important;
+    letter-spacing: -0.02em; /* Rapproche légèrement les lettres */
+  }
+}
