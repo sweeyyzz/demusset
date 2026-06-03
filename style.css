@@ -903,3 +903,41 @@
         cursor: auto !important;
     }
 }
+
+/* Forcer "De Musset" sur une seule ligne, même sur très petit écran */
+@media (max-width: 400px) {
+  .hero-title {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .adelia-font {
+    font-size: 32px;
+    white-space: nowrap;
+    display: inline-block;
+  }
+  
+  /* Cacher la scrollbar sur mobile (optionnel, plus propre) */
+  .hero-title::-webkit-scrollbar {
+    height: 2px;
+  }
+  
+  .hero-title::-webkit-scrollbar-track {
+    background: #333;
+    border-radius: 10px;
+  }
+  
+  .hero-title::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .adelia-font {
+    font-size: 28px; /* Réduit la taille pour que ça tienne mieux */
+  }
+}
