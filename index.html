@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>De Musset</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/png" href="img/logodemusset.svg">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+<header>
+  <a href="#hero" class="logo">
+    <img src="img/logodemusset.svg" alt="De Musset" />
+  </a>
+  <nav>
+    <a href="#musique">Musique</a>
+    <a href="#merch">Vêtements</a>
+    <a href="#apropos">À propos</a>
+	<a href="#galerie">Galerie</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+
+<!-- Menu mobile overlay -->
+<div class="mobile-menu" id="mobileMenu">
+  <nav>
+    <a href="#musique" class="mobile-link">Musique</a>
+    <a href="#merch" class="mobile-link">Vêtements</a>
+    <a href="#apropos" class="mobile-link">À propos</a>
+	<a href="#galerie" class="mobile-link">Galerie</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </nav>
+  <div class="mobile-menu-footer">De Musset · La Rochelle</div>
+</div>
+<section id="hero">
+  <div class="hero-bg-container">
+    <img src="img/demusset-dithering.png" alt="Fond De Musset" class="hero-image">
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">Artiste — La Rochelle</p>
+    <h1 class="hero-title"> <br><br>
+      <span class="adelia-font">De Musset</span>
+    </h1>
+<br> <br>
+    <p class="hero-sub">Rap Français  /  Auteur  /  Compositeur</p>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    Défiler
+  </div>
+</section>
+<section id="musique">
+  <div class="section-header reveal">
+    <span class="section-num">01</span>
+    <h2 class="section-title">Musique</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="music-grid">
+    <div class="spotify-main reveal reveal-delay-1">
+      <iframe
+        src="https://open.spotify.com/embed/artist/2tRgbPREeDwl44s4EoM3JW?utm_source=generator&theme=0"
+        width="100%"
+        height="460"
+        frameborder="0"
+        allowfullscreen
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <div class="reveal reveal-delay-2">
+      <p style="font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--silver-dark);margin-bottom:24px;">Dernières sorties</p>
+      <div class="releases-list">
+  <div class="release-item" onclick="playAudio('audio1')">
+    <span class="release-num">01</span>
+    <div class="release-thumb">
+      <img src="img/cover-moiaussi.jpg" alt="Pochette" style="width:100%; height:100%; object-fit:cover;">
+    </div>
+    <div class="release-info">
+      <div class="release-title">—MOI AUSSI</div>
+      <div class="release-meta">Single · 2025</div>
+    </div>
+    <span class="release-arrow">▶</span>
+    <audio id="audio1" src="audio/demusset-moiaussi.mp3"></audio>
+  </div>
+
+  <div class="release-item" onclick="playAudio('audio2')">
+    <span class="release-num">02</span>
+    <div class="release-thumb">
+      <img src="img/cover-presquepur.jpg" alt="Pochette" style="width:100%; height:100%; object-fit:cover;">
+    </div>
+    <div class="release-info">
+      <div class="release-title">Presque pur</div>
+      <div class="release-meta">Single · 2025</div>
+    </div>
+    <span class="release-arrow">▶</span>
+    <audio id="audio2" src="audio/demusset-presquepur.mp3"></audio>
+  </div>
+<div class="release-item" onclick="playAudio('audio3')">
+    <span class="release-num">03</span>
+    <div class="release-thumb">
+      <img src="img/cover-monument.jpg" alt="Pochette" style="width:100%; height:100%; object-fit:cover;">
+    </div>
+    <div class="release-info">
+      <div class="release-title">Monument</div>
+      <div class="release-meta">LIVE · 2025</div>
+    </div>
+    <span class="release-arrow">▶</span>
+    <audio id="audio3" src="audio/demusset-monument.mp3"></audio>
+  </div>
+<div class="release-item" onclick="playAudio('audio4')">
+    <span class="release-num">04</span>
+    <div class="release-thumb">
+      <img src="img/cover-manufacture.jpg" alt="Pochette" style="width:100%; height:100%; object-fit:cover;">
+    </div>
+    <div class="release-info">
+      <div class="release-title">Seule issue</div>
+      <div class="release-meta">Album · 2024</div>
+    </div>
+    <span class="release-arrow">▶</span>
+    <audio id="audio4" src="audio/demusset-seuleissue.mp3"></audio>
+  </div>
+</div>
+
+         
+    </div>
+  </div>
+      <a href="https://open.spotify.com/intl-fr/artist/2tRgbPREeDwl44s4EoM3JW" target="_blank" class="spotify-cta">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+        Écouter sur Spotify
+      </a>
+    </div>
+  </div>
+</section>
+<section id="merch">
+  <div class="section-header reveal">
+    <span class="section-num">02</span>
+    <h2 class="section-title">Vêtements</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <p class="merch-intro reveal">
+    Projets textiles exclusifs.<br>
+    Chaque pièce est pensée comme une extension de l'univers de De Musset — limitée, identitaire, sans compromis.
+  </p>
+
+  <div class="merch-grid reveal">
+    
+    <div class="merch-item">
+      <img src="img/hoodie_demusset.jpg" alt="Hoodie 111 Hiver" class="merch-img">
+      <div class="merch-overlay">
+        <span class="merch-name"></span>
+        <span class="merch-desc">Hoodie oversize brodé · Coton lourd 400g</span>
+        <a href="https://www.instagram.com/demusset_/" target="_blank" class="btn-interested">✦ Je suis intéressé</a>
+      </div>
+    </div>
+
+    <div class="merch-item">
+      <img src="img/joggers_demusset.jpg" alt="Joggers 111 Hiver" class="merch-img">
+      <div class="merch-overlay">
+        <span class="merch-name">Joggers 111 Hiver</span>
+        <span class="merch-desc">Joggers brodé · 100% coton</span>
+        <a href="https://www.instagram.com/demusset_/" target="_blank" class="btn-interested">✦ Je suis intéressé</a>
+      </div>
+    </div>
+
+    <div class="merch-item">
+      <img src="img/ton-produit-3.jpg" alt="Jacket De Musset" class="merch-img">
+      <div class="merch-overlay">
+        <span class="merch-name">Jacket De Musset</span>
+        <span class="merch-desc">Veste Coach brodée · Édition limitée</span>
+        <a href="https://www.instagram.com/demusset_/" target="_blank" class="btn-interested">✦ Je suis intéressé</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section id="apropos">
+  <div class="section-header reveal">
+    <span class="section-num">03</span>
+    <h2 class="section-title">À propos</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="about-layout">
+   <div class="about-photo reveal reveal-delay-1">
+  <img src="img/portrait-demusset.JPG" alt="De Musset" class="about-img-contain">
+  
+  <div class="about-photo-tag">De Musset · La Rochelle</div>
+</div>
+    <div class="about-content reveal reveal-delay-2">
+      <h3 class="about-quote">
+        L'écho<br>des nuits<br>trop longues
+      </h3>
+      <p class="about-text">
+       De Musset est un rappeur français originaire de La Rochelle, représentant une nouvelle génération d’artistes indépendants qui construisent leur univers entre introspection et réalité quotidienne. Encore étudiant, il développe sa musique en parallèle de ses études, faisant de son parcours une source directe d’inspiration.
+      </p>
+      <p class="about-text">
+        Son style se distingue par une tonalité mélancolique, portée par des textes sincères et personnels. À travers ses morceaux, De Musset explore les thèmes du doute, du temps qui passe, des relations et des émotions enfouies, avec une écriture à la fois simple et marquante.
+Influencé par une scène rap française de plus en plus introspective, il privilégie l’authenticité à la performance, créant une atmosphère intime où chaque morceau ressemble à une confidence. Sa musique s’adresse à ceux qui se reconnaissent dans les moments de solitude et de réflexion.
+      </p>
+      <div class="about-tags">
+        <span class="about-tag">Rap Français</span>
+        <span class="about-tag">Auteur</span>
+        <span class="about-tag">Compositeur</span>
+        <span class="about-tag">Nouvelle-Aquitaine</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="galerie">
+  <div class="section-header reveal">
+    <span class="section-num">04</span>
+    <h2 class="section-title">Galerie</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="galerie-container reveal reveal-delay-1">
+    <iframe 
+      src="https://www.instagram.com/demusset_/embed"
+      class="galerie-iframe"
+      scrolling="yes">
+    </iframe>
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@de.mvsset" data-unique-id="de.mvsset" data-embed-from="embed_page" data-embed-type="creator" style="max-width:780px; min-width:288px;"> <section> <a target="_blank" href="https://www.tiktok.com/@de.mvsset?refer=creator_embed">@de.mvsset</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-header reveal">
+    <span class="section-num">05</span>
+    <h2 class="section-title">Contact</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="contact-layout">
+    <div class="reveal">
+      <div class="contact-big">Travaillons<br>ensemble</div>
+      <p class="contact-desc">Pour toute demande de collaboration, booking, presse ou partenariat — n'hésitez pas à envoyer un mail.</p>
+    </div>
+    <div class="contact-links reveal reveal-delay-2">
+      <a href="https://www.instagram.com/demusset_/" target="_blank" class="contact-link-row">
+        <span class="contact-link-label">Instagram</span>
+        <span class="contact-link-value">@demusset_</span>
+      </a>
+      <a href="https://open.spotify.com/intl-fr/artist/2tRgbPREeDwl44s4EoM3JW" target="_blank" class="contact-link-row">
+        <span class="contact-link-label">Spotify</span>
+        <span class="contact-link-value">De Musset</span>
+      </a>
+      <a href="mailto:tonmail@email.com" class="contact-link-row">
+  <span class="contact-link-label">Email pro</span>
+  <span class="contact-link-value">contact@demusset.fr</span>
+</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <a href="#hero" class="footer-logo">
+    <img src="img/logodemusset.svg" alt="De Musset Logo">
+  </a>
+  <span class="footer-copy">© 2026 De Musset — Tous droits réservés</span>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // 1. FONCTION POUR JOUER LA MUSIQUE
+  function playAudio(id) {
+    const allAudios = document.querySelectorAll('audio');
+    const targetAudio = document.getElementById(id);
+
+    // Si on clique sur un morceau déjà en lecture, on met en pause
+    if (!targetAudio.paused) {
+      targetAudio.pause();
+    } else {
+      // Sinon, on coupe tous les autres sons et on lance celui-ci
+      allAudios.forEach(audio => {
+        audio.pause();
+        audio.currentTime = 0;
+      });
+      targetAudio.play();
+    }
+  }
+
+  const cursor = document.getElementById('cursor');
+  const follower = document.getElementById('cursorFollower');
+  let mouseX = 0, mouseY = 0, followerX = 0, followerY = 0;
+
+  document.addEventListener('mousemove', e => {
+    mouseX = e.clientX; 
+    mouseY = e.clientY;
+    cursor.style.left = mouseX + 'px';
+    cursor.style.top = mouseY + 'px';
+  });
+
+  function animateFollower() {
+    followerX += (mouseX - followerX) * 0.1;
+    followerY += (mouseY - followerY) * 0.1;
+    follower.style.left = followerX + 'px';
+    follower.style.top = followerY + 'px';
+    requestAnimationFrame(animateFollower);
+  }
+  animateFollower();
+
+  // EFFET D'APPARITION AU SCROLL (Reveal)
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(    entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.12 });
+
+  reveals.forEach(el => observer.observe(el));
+
+  // MENU HAMBURGER MOBILE
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+
+  function toggleMenu() {
+    const isOpen = mobileMenu.classList.contains('open');
+    if (isOpen) {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    } else {
+      mobileMenu.classList.add('open');
+      hamburger.classList.add('open');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  hamburger.addEventListener('click', toggleMenu);
+
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+  });
+</script>
+
+</body>
+</html>
