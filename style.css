@@ -971,3 +971,38 @@
     letter-spacing: -0.02em; /* Rapproche légèrement les lettres */
   }
 }
+
+/* Solution spécifique pour Safari iPhone */
+@supports (-webkit-touch-callout: none) {
+  .hero-title {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .adelia-font {
+    font-size: 36px !important;
+    white-space: nowrap !important;
+    display: block !important;
+    text-align: center !important;
+    transform: scale(0.9);
+    letter-spacing: -1px;
+  }
+}
+
+@media (max-width: 390px) {
+  @supports (-webkit-touch-callout: none) {
+    .adelia-font {
+      font-size: 30px !important;
+      transform: scale(0.85);
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  @supports (-webkit-touch-callout: none) {
+    .adelia-font {
+      font-size: 26px !important;
+      transform: scale(0.8);
+    }
+  }
+}
